@@ -4,7 +4,7 @@
 Summary:	PHP Skype API wrapper class
 Name:		php-%{pkgname}
 Version:	0.1.1
-Release:	1
+Release:	2
 License:	PHP 3.0
 Group:		Development/Languages/PHP
 Source0:	http://labs.gree.jp/data/source/php-skype-%{version}.tgz
@@ -12,10 +12,10 @@ Source0:	http://labs.gree.jp/data/source/php-skype-%{version}.tgz
 URL:		http://labs.gree.jp/Top/OpenSource/Skype-en.html
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.461
+Requires:	php(core) >= %{php_min_version}
+Requires:	php(date)
 Requires:	php(dbus)
-Requires:	php-common >= 4:%{php_min_version}
-Requires:	php-date
-Requires:	php-pcre
+Requires:	php(pcre)
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
