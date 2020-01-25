@@ -1,6 +1,5 @@
 %define		php_min_version 5.0.0
 %define		pkgname	skype
-%include	/usr/lib/rpm/macros.php
 Summary:	PHP Skype API wrapper class
 Name:		php-%{pkgname}
 Version:	0.1.1
